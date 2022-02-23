@@ -17,9 +17,11 @@ header .headerContainer {
   header .headerContainer a {
     text-decoration: none;
     color: #1f1f1f; }
-  header .headerContainer .logo {
-    padding-left: 15px;
-    font-size: 1.5em; }
+  header .headerContainer .headerLogo {
+    margin-left: 15px;
+    width: 50px;
+    height: auto;
+    filter: invert(15%) sepia(3%) saturate(27%) hue-rotate(37deg) brightness(96%) contrast(105%); }
   header .headerContainer .headerList {
     padding-right: 15px; }
     header .headerContainer .headerList .listItem {

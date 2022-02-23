@@ -1,0 +1,22 @@
+.navigationBar{
+    background-color: $azul;
+    width: 15%;
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    .navTitle{
+        font-weight: 500;
+        margin: 15px 0;
+    }
+    .navList{
+        list-style: none;
+        .navRecipe{
+            margin-bottom: 15px;
+            a{
+                text-decoration: none;
+                color: $negro;
+            }
+        }
+    }
+}

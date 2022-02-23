@@ -4,7 +4,13 @@
     padding: 0;
     box-sizing: border-box;
 }
-
 @import "base/variables.scss";
+
+body{
+    font-family: 'Kiwi Maru', serif;
+    color: $negro;
+}
+
 @import "components/header.scss";
 @import "components/index.scss";
+@import "components/navBar.scss";

@@ -1,0 +1,23 @@
+header{
+    .headerContainer{
+        display: flex;
+        justify-content: space-between;
+        background-color: $rosa;
+        height: 10vh;
+        align-items: center;
+        .logo{
+            padding-left: 15px;
+        }
+        .headerList{
+            .listItem{
+                list-style: none;
+                display: inline-block;
+                padding-right: 15px;
+                a{
+                    text-decoration: none;
+                    color: $negro;
+                }
+            }
+        }
+    }
+}

@@ -3,3 +3,41 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box; }
+
+body {
+  font-family: 'Kiwi Maru', serif;
+  color: #1f1f1f; }
+
+header .headerContainer {
+  display: flex;
+  justify-content: space-between;
+  background-color: #FEC5BB;
+  height: 10vh;
+  align-items: center; }
+  header .headerContainer .logo {
+    padding-left: 15px; }
+  header .headerContainer .headerList .listItem {
+    list-style: none;
+    display: inline-block;
+    padding-right: 15px; }
+    header .headerContainer .headerList .listItem a {
+      text-decoration: none;
+      color: #1f1f1f; }
+
+.navigationBar {
+  background-color: #F8EDEB;
+  width: 15%;
+  height: 90vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+  .navigationBar .navTitle {
+    font-weight: 500;
+    margin: 15px 0; }
+  .navigationBar .navList {
+    list-style: none; }
+    .navigationBar .navList .navRecipe {
+      margin-bottom: 15px; }
+      .navigationBar .navList .navRecipe a {
+        text-decoration: none;
+        color: #1f1f1f; }

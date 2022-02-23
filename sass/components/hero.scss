@@ -1,0 +1,20 @@
+.mainIndex{
+    .hero{
+        background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url("../img/heroCocina.jpg");
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-color: $azul2;
+        height: 90vh;
+        width: 100%;
+        color: $blanco;
+        font-size: 2em;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        .heroTitle{
+            font-weight: 500;
+        }
+    }
+}

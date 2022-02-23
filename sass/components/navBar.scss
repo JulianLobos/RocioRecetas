@@ -1,11 +1,12 @@
 .navigationBar{
-    background-color: $azul;
+    background-color: $rosa3;
     width: 15%;
     height: 90vh;
     display: flex;
     flex-direction: column;
     align-items: center;
     .navTitle{
+        font-size: 1.25em;
         font-weight: 500;
         margin: 15px 0;
     }

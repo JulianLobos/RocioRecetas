@@ -5,17 +5,27 @@ header{
         background-color: $rosa;
         height: 10vh;
         align-items: center;
+        a{
+            text-decoration: none;
+            color: $negro;
+        }
         .logo{
             padding-left: 15px;
+            font-size: 1.5em;
         }
         .headerList{
+            padding-right: 15px;
             .listItem{
                 list-style: none;
                 display: inline-block;
-                padding-right: 15px;
+                padding: 5px 15px;
                 a{
                     text-decoration: none;
                     color: $negro;
+                }
+                &:hover{
+                    background-color: $rosa2;
+                    border-radius: 25px;
                 }
             }
         }

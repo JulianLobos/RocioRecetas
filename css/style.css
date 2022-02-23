@@ -14,24 +14,37 @@ header .headerContainer {
   background-color: #FEC5BB;
   height: 10vh;
   align-items: center; }
+  header .headerContainer a {
+    text-decoration: none;
+    color: #1f1f1f; }
   header .headerContainer .logo {
-    padding-left: 15px; }
-  header .headerContainer .headerList .listItem {
-    list-style: none;
-    display: inline-block;
+    padding-left: 15px;
+    font-size: 1.5em; }
+  header .headerContainer .headerList {
     padding-right: 15px; }
-    header .headerContainer .headerList .listItem a {
-      text-decoration: none;
-      color: #1f1f1f; }
+    header .headerContainer .headerList .listItem {
+      list-style: none;
+      display: inline-block;
+      padding: 5px 15px; }
+      header .headerContainer .headerList .listItem a {
+        text-decoration: none;
+        color: #1f1f1f; }
+      header .headerContainer .headerList .listItem:hover {
+        background-color: #FCD5CE;
+        border-radius: 25px; }
+
+.mainIndex {
+  display: flex; }
 
 .navigationBar {
-  background-color: #F8EDEB;
+  background-color: #FAE1DD;
   width: 15%;
   height: 90vh;
   display: flex;
   flex-direction: column;
   align-items: center; }
   .navigationBar .navTitle {
+    font-size: 1.25em;
     font-weight: 500;
     margin: 15px 0; }
   .navigationBar .navList {
@@ -41,3 +54,20 @@ header .headerContainer {
       .navigationBar .navList .navRecipe a {
         text-decoration: none;
         color: #1f1f1f; }
+
+.mainIndex .hero {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("../img/heroCocina.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: #E8E8E4;
+  height: 90vh;
+  width: 100%;
+  color: #f5f5f5;
+  font-size: 2em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; }
+  .mainIndex .hero .heroTitle {
+    font-weight: 500; }

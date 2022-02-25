@@ -41,21 +41,25 @@ header .headerContainer {
 .navigationBar {
   background-color: #FAE1DD;
   width: 15%;
-  height: 90vh;
+  height: auto;
   display: flex;
   flex-direction: column;
-  align-items: center; }
-  .navigationBar .navTitle {
+  align-items: center;
+  justify-content: space-between; }
+  .navigationBar .navMenu .navTitle {
     font-size: 1.25em;
     font-weight: 500;
     margin: 15px 0; }
-  .navigationBar .navList {
+  .navigationBar .navMenu .navList {
     list-style: none; }
-    .navigationBar .navList .navRecipe {
+    .navigationBar .navMenu .navList .navRecipe {
       margin-bottom: 15px; }
-      .navigationBar .navList .navRecipe a {
+      .navigationBar .navMenu .navList .navRecipe a {
         text-decoration: none;
         color: #1f1f1f; }
+  .navigationBar .navDraw img {
+    width: 100px;
+    height: auto; }
 
 .mainIndex .hero {
   background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("../img/heroCocina.jpg");
@@ -72,4 +76,37 @@ header .headerContainer {
   justify-content: center;
   align-items: center; }
   .mainIndex .hero .heroTitle {
-    font-weight: 500; }
+    font-weight: 500;
+    font-size: 1.25em; }
+
+.mainRecipe {
+  background-color: #F8EDEB;
+  width: 100%; }
+  .mainRecipe .recipeHeader {
+    border-bottom: 1px solid #ccc; }
+    .mainRecipe .recipeHeader h1 {
+      padding-left: 20px;
+      border-bottom: 1px solid #ccc; }
+    .mainRecipe .recipeHeader .recipeData {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      margin: 20px 0; }
+      .mainRecipe .recipeHeader .recipeData img {
+        width: 250px;
+        height: 250px;
+        object-fit: cover;
+        border-radius: 20px; }
+      .mainRecipe .recipeHeader .recipeData .recipeIngredients p {
+        font-size: 1.25em;
+        font-weight: 600; }
+      .mainRecipe .recipeHeader .recipeData .recipeIngredients ul {
+        list-style: none; }
+  .mainRecipe .recipeProcess {
+    margin: 40px; }
+    .mainRecipe .recipeProcess .processTitle {
+      font-size: 1.25em;
+      font-weight: 600;
+      margin-bottom: 20px; }
+    .mainRecipe .recipeProcess ol li {
+      margin: 15px 0; }

@@ -5,7 +5,7 @@
   box-sizing: border-box; }
 
 body {
-  font-family: 'Kiwi Maru', serif;
+  font-family: 'Montserrat', sans-serif;
   color: #1f1f1f; }
 
 header .headerContainer {
@@ -110,3 +110,22 @@ header .headerContainer {
       margin-bottom: 20px; }
     .mainRecipe .recipeProcess ol li {
       margin: 15px 0; }
+
+.mainIndex .contactPage {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  height: 90vh; }
+  .mainIndex .contactPage .contactForm {
+    text-align: center;
+    align-self: center; }
+    .mainIndex .contactPage .contactForm p {
+      font-size: 1.25em;
+      font-weight: 600;
+      color: #1f1f1f; }
+    .mainIndex .contactPage .contactForm a img {
+      width: 50px; }
+  .mainIndex .contactPage .contactImg img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; }

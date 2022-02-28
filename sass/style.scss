@@ -7,7 +7,7 @@
 @import "base/variables.scss";
 
 body{
-    font-family: 'Kiwi Maru', serif;
+    font-family: 'Montserrat', sans-serif;
     color: $negro;
 }
 
@@ -16,3 +16,4 @@ body{
 @import "components/navBar.scss";
 @import "components/hero.scss";
 @import "components/recipe.scss";
+@import "components/contact.scss";

@@ -22,7 +22,8 @@ header .headerContainer {
     margin-left: 15px;
     width: 50px;
     height: auto;
-    filter: invert(15%) sepia(3%) saturate(27%) hue-rotate(37deg) brightness(96%) contrast(105%); }
+    filter: invert(15%) sepia(3%) saturate(27%) hue-rotate(37deg) brightness(96%) contrast(105%);
+    z-index: 1; }
   header .headerContainer .headerList {
     padding-right: 15px; }
     header .headerContainer .headerList .listItem {
@@ -109,8 +110,7 @@ header .headerContainer {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
-    z-index: 1; }
+    align-items: center; }
     .mainIndex .contactPage .contactText p {
       font-size: 1.5em;
       font-weight: 500;

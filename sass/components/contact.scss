@@ -1,28 +1,41 @@
 .mainIndex{
     .contactPage{
+        display: flex;
+        transition: all 0.4s ease;
         width: 100%;
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        height: 90vh;
-        .contactForm{
-            text-align: center;
-            align-self: center;
+        .cocineraImg{
+            z-index: -1;
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            top: 10vh;
+            object-fit: cover;
+            overflow: hidden;
+            transition: all 0.4s ease;
+        }
+        .contactText{
+            width: 100%;
+            height: auto;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            z-index: 1;
             p{
-                font-size: 1.25em;
-                font-weight: 600;
-                color: $negro;
+                font-size: 1.5em;
+                font-weight: 500;
+                text-align: center;
             }
             a{
                 img{
-                    width: 50px;
+                    width: 40px;
+                    height: 40px;
                 }
             }
         }
-        .contactImg{
-            img{
-                width: 100%;
-                height: 100%;
-                object-fit: cover;
+        &:hover{
+            .cocineraImg{
+                filter: blur(10px);
             }
         }
     }

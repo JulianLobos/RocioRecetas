@@ -13,18 +13,23 @@
     <!-- style links -->
     <link rel="stylesheet" href="../css/style.css">
     <!-- title -->
-    <title>Receta1</title>
+    <title>Contacto | Rocio Recetas</title>
 </head>
 <body>
     <!-- header -->
     <header>
         <div class="headerContainer">
             <a href="../index.html"><img src="../img/RRlogo.svg" class="headerLogo" alt="Rocio Recetas Logo"></a>
-            <ul class="headerList">
+            <ul class="headerList" id="menuRR">
                 <li class="listItem"><a href="../index.html">Home</a></li>
                 <li class="listItem"><a href="#">Recetas</a></li>
                 <li class="listItem"><a href="#">Contacto</a></li>
             </ul>
+            <div class="hamburgerRR" id="hamburgerRR">
+                <div class="one"></div>
+                <div class="two"></div>
+                <div class="three"></div>
+            </div>
         </div>
     </header>
     <main class="mainIndex">
@@ -33,7 +38,7 @@
             <div class="navMenu">
                 <p class="navTitle">Recetas</p>
                 <ul class="navList">
-                    <li class="navRecipe"><a href="#">Chipá</a></li>
+                    <li class="navRecipe"><a href="chipa.html">Chipá</a></li>
                     <li class="navRecipe"><a href="#">Medialunas</a></li>
                     <li class="navRecipe"><a href="#">Turrón Salteño</a></li>
                     <li class="navRecipe"><a href="#">Scones</a></li>
@@ -45,15 +50,17 @@
             </div>
         </nav>
         <div class="contactPage">
-            <div class="contactForm">
+            <img src="../img/Roci.svg" alt="cocinera" class="cocineraImg">
+            <div class="contactText">
                 <p>Podés encontrarme en mis redes sociales:</p>
-                <a href="#"><img src="../img/facebook.svg" alt="facebook"></a>
-                <a href="#"><img src="../img/instagram.svg" alt="instagram"></a>
-            </div>
-            <div class="contactImg">
-                <img src="../img/Roci.svg" alt="cocinera">
+                <div class="redes">
+                    <a href="#"><img src="../img/facebook.svg" alt="facebook"></a>
+                    <a href="#"><img src="../img/instagram.svg" alt="instagram"></a>
+                </div>
             </div>
         </div>
     </main>
+    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+    <script type="text/javascript" src="../js/script.js"></script>
 </body>
 </html>

@@ -13,18 +13,23 @@
     <!-- style links -->
     <link rel="stylesheet" href="../css/style.css">
     <!-- title -->
-    <title>Receta1</title>
+    <title>Chipá | Rocio Recetas</title>
 </head>
 <body>
     <!-- header -->
     <header>
         <div class="headerContainer">
             <a href="../index.html"><img src="../img/RRlogo.svg" class="headerLogo" alt="Rocio Recetas Logo"></a>
-            <ul class="headerList">
+            <ul class="headerList" id="menuRR">
                 <li class="listItem"><a href="../index.html">Home</a></li>
                 <li class="listItem"><a href="#">Recetas</a></li>
                 <li class="listItem"><a href="contact.html">Contacto</a></li>
             </ul>
+            <div class="hamburgerRR" id="hamburgerRR">
+                <div class="one"></div>
+                <div class="two"></div>
+                <div class="three"></div>
+            </div>
         </div>
     </header>
     <main class="mainIndex">
@@ -46,17 +51,19 @@
         </nav>
         <div class="mainRecipe">
             <div class="recipeHeader">
-                <h1>Receta XXXXXXXX</h1>
+                <h1>Chipá</h1>
                 <div class="recipeData">
-                    <img src="../img/cihpa.jpg" alt="chipá">
+                    <div class="recipeImg">
+                        <img src="../img/cihpa.jpg" alt="chipá">
+                    </div>
                     <div class="recipeIngredients">
                         <p>Ingredientes</p>
                         <ul class="ingredientsList">
-                            <li class="ingredient">ingrediente 1</li>
-                            <li class="ingredient">ingrediente 2</li>
-                            <li class="ingredient">ingrediente 3</li>
-                            <li class="ingredient">ingrediente 4</li>
-                            <li class="ingredient">ingrediente 5</li>
+                            <li class="ingredient">Fécula de mandioca</li>
+                            <li class="ingredient">Queso Parmesano</li>
+                            <li class="ingredient">Agua</li>
+                            <li class="ingredient">Queso blando</li>
+                            <li class="ingredient">Leche</li>
                         </ul>
                     </div>                    
                 </div>
@@ -76,5 +83,7 @@
             </div>
         </div>
     </main>
+    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+    <script type="text/javascript" src="../js/script.js"></script>
 </body>
 </html>

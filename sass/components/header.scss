@@ -31,5 +31,20 @@ header{
                 }
             }
         }
+        .hamburgerRR{
+            width: 28px;
+            height: 30px;
+            margin: 10px 15px;
+            display: none;
+            div{
+                width: 100%;
+                height: 5px;
+                background: $negro;
+                margin: 4px auto;
+                transition: all 0.3s;
+                backface-visibility: hidden;
+                border-radius: 15px;
+            }
+        }
     }
 }

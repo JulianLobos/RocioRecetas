@@ -9,11 +9,13 @@
 body{
     font-family: 'Montserrat', sans-serif;
     color: $negro;
+    overflow: hidden;
 }
 
 @import "components/header.scss";
-@import "components/index.scss";
 @import "components/navBar.scss";
 @import "components/hero.scss";
-@import "components/recipe.scss";
 @import "components/contact.scss";
+@import "components/recipe.scss";
+@import "components/index.scss";
+@import "components/mediaqueries.scss";

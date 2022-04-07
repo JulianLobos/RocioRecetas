@@ -1,0 +1,84 @@
+@media (max-width: 576px) { 
+    body{
+        header{
+            .headerContainer{
+                .headerLogo{
+                    z-index: 1;
+                }
+                .headerList{
+                    display: none;
+                    margin: 0;
+                    padding: 0;
+                    background-color: $rosa;
+                    position: absolute;
+                    top: 0;
+                    height: 100vh;
+                    width: 100%;
+                    padding-top: 30%;
+                    .listItem{
+                        display: block;
+                        text-align: center;
+                        font-size: 1.5em;
+                        font-weight: 600;
+                        padding: 15px 30px;
+                        &:hover{
+                            border-radius: 0px;
+                        }
+                    }
+                }
+                .hamburgerRR{
+                    display: inline-block;
+                    z-index: 1;
+                }
+                #hamburgerRR.on .one {
+                    transform: rotate(45deg) translate(5px, 5px);
+                }
+                  
+                #hamburgerRR.on .two {
+                opacity: 0;
+                }
+                
+                #hamburgerRR.on .three {
+                transform: rotate(-45deg) translate(7px, -8px);
+                }
+            }
+        }
+        
+        .mainIndex{
+            .navigationBar{
+                display: none;
+            }
+            .mainRecipe{
+                padding: 15px;
+                .recipeHeader{
+                    h1{
+                        padding: 15px;
+                    }
+                    .recipeData{
+                        flex-direction: column;
+                        .recipeImg{
+                            width: 200px;
+                            height: 200px;
+                            img{
+                                width: 200px;
+                                height: 200px;
+                            }
+                        }
+                        .recipeIngredients{
+                            margin: 15px 0;
+                            p{
+                                margin-bottom: 5px;
+                            }
+                        }
+                    }
+                }
+            }
+            .contactPage{
+                .contactText{
+                    margin-top: 40vh;
+                    padding: 25px;
+                }
+            }
+        }
+    }
+}

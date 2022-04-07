@@ -1,33 +1,35 @@
-.navigationBar{
-    background-color: $rosa3;
-    width: 15%;
-    height: auto;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-between;
-    .navMenu{
-        .navTitle{
-            font-size: 1.25em;
-            font-weight: 500;
-            margin: 15px 0;
-        }
-        .navList{
-            list-style: none;
-            .navRecipe{
-                margin-bottom: 15px;
-                a{
-                    text-decoration: none;
-                    color: $negro;
+.mainIndex{
+    .navigationBar{
+        background-color: $rosa3;
+        width: 200px;
+        height: 90vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        .navMenu{
+            .navTitle{
+                font-size: 1.25em;
+                font-weight: 600;
+                margin: 15px;
+            }
+            .navList{
+                list-style: none;
+                .navRecipe{
+                    margin: 15px;
+                    a{
+                        text-decoration: none;
+                        color: $negro;
+                    }
                 }
             }
+            
         }
-        
-    }
-    .navDraw{
-        img{
-            width: 100px;
-            height: auto;
+        .navDraw{
+            img{
+                width: 100px;
+                height: auto;
+            }
         }
     }
 }

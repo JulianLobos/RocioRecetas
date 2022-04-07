@@ -6,7 +6,8 @@
 
 body {
   font-family: 'Montserrat', sans-serif;
-  color: #1f1f1f; }
+  color: #1f1f1f;
+  overflow: hidden; }
 
 header .headerContainer {
   display: flex;
@@ -34,30 +35,40 @@ header .headerContainer {
       header .headerContainer .headerList .listItem:hover {
         background-color: #FCD5CE;
         border-radius: 25px; }
+  header .headerContainer .hamburgerRR {
+    width: 28px;
+    height: 30px;
+    margin: 10px 15px;
+    display: none; }
+    header .headerContainer .hamburgerRR div {
+      width: 100%;
+      height: 5px;
+      background: #1f1f1f;
+      margin: 4px auto;
+      transition: all 0.3s;
+      backface-visibility: hidden;
+      border-radius: 15px; }
 
-.mainIndex {
-  display: flex; }
-
-.navigationBar {
+.mainIndex .navigationBar {
   background-color: #FAE1DD;
-  width: 15%;
-  height: auto;
+  width: 200px;
+  height: 90vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: space-between; }
-  .navigationBar .navMenu .navTitle {
+  .mainIndex .navigationBar .navMenu .navTitle {
     font-size: 1.25em;
-    font-weight: 500;
-    margin: 15px 0; }
-  .navigationBar .navMenu .navList {
+    font-weight: 600;
+    margin: 15px; }
+  .mainIndex .navigationBar .navMenu .navList {
     list-style: none; }
-    .navigationBar .navMenu .navList .navRecipe {
-      margin-bottom: 15px; }
-      .navigationBar .navMenu .navList .navRecipe a {
+    .mainIndex .navigationBar .navMenu .navList .navRecipe {
+      margin: 15px; }
+      .mainIndex .navigationBar .navMenu .navList .navRecipe a {
         text-decoration: none;
         color: #1f1f1f; }
-  .navigationBar .navDraw img {
+  .mainIndex .navigationBar .navDraw img {
     width: 100px;
     height: auto; }
 
@@ -79,53 +90,131 @@ header .headerContainer {
     font-weight: 500;
     font-size: 1.25em; }
 
-.mainRecipe {
+.mainIndex .contactPage {
+  display: flex;
+  transition: all 0.4s ease;
+  width: 100%; }
+  .mainIndex .contactPage .cocineraImg {
+    z-index: -1;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 10vh;
+    object-fit: cover;
+    overflow: hidden;
+    transition: all 0.4s ease; }
+  .mainIndex .contactPage .contactText {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 1; }
+    .mainIndex .contactPage .contactText p {
+      font-size: 1.5em;
+      font-weight: 500;
+      text-align: center; }
+    .mainIndex .contactPage .contactText a img {
+      width: 40px;
+      height: 40px; }
+  .mainIndex .contactPage:hover .cocineraImg {
+    filter: blur(10px); }
+
+.mainIndex .mainRecipe {
   background-color: #F8EDEB;
   width: 100%; }
-  .mainRecipe .recipeHeader {
+  .mainIndex .mainRecipe .recipeHeader {
     border-bottom: 1px solid #ccc; }
-    .mainRecipe .recipeHeader h1 {
+    .mainIndex .mainRecipe .recipeHeader h1 {
       padding-left: 20px;
       border-bottom: 1px solid #ccc; }
-    .mainRecipe .recipeHeader .recipeData {
+    .mainIndex .mainRecipe .recipeHeader .recipeData {
       display: flex;
+      padding: 0 10px;
       justify-content: space-around;
       align-items: center;
       margin: 20px 0; }
-      .mainRecipe .recipeHeader .recipeData img {
+      .mainIndex .mainRecipe .recipeHeader .recipeData .recipeImg {
+        border-radius: 20px;
+        overflow: hidden;
         width: 250px;
-        height: 250px;
-        object-fit: cover;
-        border-radius: 20px; }
-      .mainRecipe .recipeHeader .recipeData .recipeIngredients p {
-        font-size: 1.25em;
-        font-weight: 600; }
-      .mainRecipe .recipeHeader .recipeData .recipeIngredients ul {
-        list-style: none; }
-  .mainRecipe .recipeProcess {
+        height: 250px; }
+        .mainIndex .mainRecipe .recipeHeader .recipeData .recipeImg img {
+          width: 250px;
+          height: 250px;
+          object-fit: cover;
+          transition: all 0.3s cubic-bezier(0.165, 0.84, 0.44, 1); }
+          .mainIndex .mainRecipe .recipeHeader .recipeData .recipeImg img:hover {
+            transform: scale(1.1); }
+      .mainIndex .mainRecipe .recipeHeader .recipeData .recipeIngredients {
+        padding: 0 10px; }
+        .mainIndex .mainRecipe .recipeHeader .recipeData .recipeIngredients p {
+          font-size: 1.25em;
+          font-weight: 600;
+          margin: 0 0 5px 0; }
+        .mainIndex .mainRecipe .recipeHeader .recipeData .recipeIngredients ul {
+          list-style: none; }
+  .mainIndex .mainRecipe .recipeProcess {
     margin: 40px; }
-    .mainRecipe .recipeProcess .processTitle {
+    .mainIndex .mainRecipe .recipeProcess .processTitle {
       font-size: 1.25em;
       font-weight: 600;
       margin-bottom: 20px; }
-    .mainRecipe .recipeProcess ol li {
+    .mainIndex .mainRecipe .recipeProcess ol li {
       margin: 15px 0; }
 
-.mainIndex .contactPage {
-  width: 100%;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  height: 90vh; }
-  .mainIndex .contactPage .contactForm {
-    text-align: center;
-    align-self: center; }
-    .mainIndex .contactPage .contactForm p {
-      font-size: 1.25em;
-      font-weight: 600;
-      color: #1f1f1f; }
-    .mainIndex .contactPage .contactForm a img {
-      width: 50px; }
-  .mainIndex .contactPage .contactImg img {
+.mainIndex {
+  display: flex; }
+
+@media (max-width: 576px) {
+  body header .headerContainer .headerLogo {
+    z-index: 1; }
+  body header .headerContainer .headerList {
+    display: none;
+    margin: 0;
+    padding: 0;
+    background-color: #FEC5BB;
+    position: absolute;
+    top: 0;
+    height: 100vh;
     width: 100%;
-    height: 100%;
-    object-fit: cover; }
+    padding-top: 30%; }
+    body header .headerContainer .headerList .listItem {
+      display: block;
+      text-align: center;
+      font-size: 1.5em;
+      font-weight: 600;
+      padding: 15px 30px; }
+      body header .headerContainer .headerList .listItem:hover {
+        border-radius: 0px; }
+  body header .headerContainer .hamburgerRR {
+    display: inline-block;
+    z-index: 1; }
+  body header .headerContainer #hamburgerRR.on .one {
+    transform: rotate(45deg) translate(5px, 5px); }
+  body header .headerContainer #hamburgerRR.on .two {
+    opacity: 0; }
+  body header .headerContainer #hamburgerRR.on .three {
+    transform: rotate(-45deg) translate(7px, -8px); }
+  body .mainIndex .navigationBar {
+    display: none; }
+  body .mainIndex .mainRecipe {
+    padding: 15px; }
+    body .mainIndex .mainRecipe .recipeHeader h1 {
+      padding: 15px; }
+    body .mainIndex .mainRecipe .recipeHeader .recipeData {
+      flex-direction: column; }
+      body .mainIndex .mainRecipe .recipeHeader .recipeData .recipeImg {
+        width: 200px;
+        height: 200px; }
+        body .mainIndex .mainRecipe .recipeHeader .recipeData .recipeImg img {
+          width: 200px;
+          height: 200px; }
+      body .mainIndex .mainRecipe .recipeHeader .recipeData .recipeIngredients {
+        margin: 15px 0; }
+        body .mainIndex .mainRecipe .recipeHeader .recipeData .recipeIngredients p {
+          margin-bottom: 5px; }
+  body .mainIndex .contactPage .contactText {
+    margin-top: 40vh;
+    padding: 25px; } }

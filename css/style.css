@@ -19,7 +19,7 @@ header .headerContainer {
     text-decoration: none;
     color: #1f1f1f; }
   header .headerContainer .headerLogo {
-    margin-left: 15px;
+    margin-left: 25px;
     width: 50px;
     height: auto;
     filter: invert(15%) sepia(3%) saturate(27%) hue-rotate(37deg) brightness(96%) contrast(105%);
@@ -39,8 +39,9 @@ header .headerContainer {
   header .headerContainer .hamburgerRR {
     width: 28px;
     height: 30px;
-    margin: 10px 15px;
-    display: none; }
+    margin: 10px 25px;
+    display: none;
+    cursor: pointer; }
     header .headerContainer .hamburgerRR div {
       width: 100%;
       height: 5px;
@@ -90,6 +91,23 @@ header .headerContainer {
   .mainIndex .hero .heroTitle {
     font-weight: 500;
     font-size: 1.25em; }
+
+.mainIndex a {
+  text-decoration: none; }
+
+.mainIndex button {
+  display: none;
+  padding: 10px 30px;
+  background-color: #FCD5CE;
+  margin: 15px 0 0 0;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-weight: 600;
+  font-family: 'Montserrat', sans-serif; }
+  .mainIndex button:hover {
+    background-color: #FEC5BB; }
 
 .mainIndex .contactPage {
   display: flex;
@@ -225,6 +243,8 @@ header .headerContainer {
     opacity: 0; }
   body header .headerContainer #hamburgerRR.on .three {
     transform: rotate(-45deg) translate(7px, -8px); }
+  body .mainIndex button {
+    display: block; }
   body .mainIndex .navigationBar {
     display: none; }
   body .mainIndex .mainRecipe {
@@ -245,4 +265,12 @@ header .headerContainer {
           margin-bottom: 5px; }
   body .mainIndex .contactPage .contactText {
     margin-top: 40vh;
-    padding: 25px; } }
+    padding: 25px; }
+  body .mainIndex .recipeSection .recipeCard .recipeCardImg {
+    width: 120px;
+    height: 120px; }
+    body .mainIndex .recipeSection .recipeCard .recipeCardImg img {
+      width: 120px;
+      height: 120px; }
+  body .mainIndex .recipeSection .recipeCard .recipeTitle {
+    font-size: 0.85em; } }

@@ -6,8 +6,7 @@
 
 body {
   font-family: 'Montserrat', sans-serif;
-  color: #1f1f1f;
-  overflow: hidden; }
+  color: #1f1f1f; }
 
 header .headerContainer {
   display: flex;
@@ -53,8 +52,10 @@ header .headerContainer {
 
 .mainIndex .navigationBar {
   background-color: #FAE1DD;
-  width: 200px;
-  height: 90vh;
+  width: 180px;
+  min-width: 180px;
+  min-height: 90vh;
+  height: auto;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -109,35 +110,36 @@ header .headerContainer {
   .mainIndex button:hover {
     background-color: #FEC5BB; }
 
-.mainIndex .contactPage {
-  display: flex;
-  transition: all 0.4s ease;
-  width: 100%; }
-  .mainIndex .contactPage .cocineraImg {
-    z-index: -1;
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    top: 10vh;
-    object-fit: cover;
-    overflow: hidden;
-    transition: all 0.4s ease; }
-  .mainIndex .contactPage .contactText {
-    width: 100%;
-    height: auto;
+.bodyContact {
+  overflow: hidden; }
+  .bodyContact .mainIndex .contactPage {
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center; }
-    .mainIndex .contactPage .contactText p {
-      font-size: 1.5em;
-      font-weight: 500;
-      text-align: center; }
-    .mainIndex .contactPage .contactText a img {
-      width: 40px;
-      height: 40px; }
-  .mainIndex .contactPage:hover .cocineraImg {
-    filter: blur(10px); }
+    transition: all 0.4s ease;
+    width: 100%; }
+    .bodyContact .mainIndex .contactPage .cocineraImg {
+      z-index: -1;
+      position: absolute;
+      width: 100%;
+      height: 90vh;
+      top: 10vh;
+      object-fit: cover;
+      transition: all 0.4s ease; }
+    .bodyContact .mainIndex .contactPage .contactText {
+      width: 100%;
+      height: auto;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center; }
+      .bodyContact .mainIndex .contactPage .contactText p {
+        font-size: 1.5em;
+        font-weight: 500;
+        text-align: center; }
+      .bodyContact .mainIndex .contactPage .contactText a img {
+        width: 40px;
+        height: 40px; }
+    .bodyContact .mainIndex .contactPage:hover .cocineraImg {
+      filter: blur(10px); }
 
 .mainIndex .mainRecipe {
   background-color: #F8EDEB;
@@ -145,7 +147,7 @@ header .headerContainer {
   .mainIndex .mainRecipe .recipeHeader {
     border-bottom: 1px solid #ccc; }
     .mainIndex .mainRecipe .recipeHeader h1 {
-      padding-left: 20px;
+      padding: 15px 20px;
       border-bottom: 1px solid #ccc; }
     .mainIndex .mainRecipe .recipeHeader .recipeData {
       display: flex;
@@ -186,7 +188,8 @@ header .headerContainer {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
-  background-color: #f1faee; }
+  background-color: #f1faee;
+  min-height: 90vh; }
   .mainIndex .recipeSection .recipeCard {
     display: flex;
     flex-direction: column;
@@ -211,7 +214,8 @@ header .headerContainer {
       transform: scale(1.1); }
 
 .mainIndex {
-  display: flex; }
+  display: flex;
+  height: auto; }
 
 @media (max-width: 576px) {
   body header .headerContainer .headerLogo {

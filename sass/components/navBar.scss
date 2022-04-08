@@ -1,8 +1,10 @@
 .mainIndex{
     .navigationBar{
         background-color: $rosa3;
-        width: 200px;
-        height: 90vh;
+        width: 180px;
+        min-width: 180px;
+        min-height: 90vh;
+        height: auto;
         display: flex;
         flex-direction: column;
         align-items: center;

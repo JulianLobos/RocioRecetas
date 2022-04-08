@@ -1,41 +1,43 @@
-.mainIndex{
-    .contactPage{
-        display: flex;
-        transition: all 0.4s ease;
-        width: 100%;
-        .cocineraImg{
-            z-index: -1;
-            position: absolute;
-            width: 100%;
-            height: 100%;
-            top: 10vh;
-            object-fit: cover;
-            overflow: hidden;
-            transition: all 0.4s ease;
-        }
-        .contactText{
-            width: 100%;
-            height: auto;
+.bodyContact{
+    .mainIndex{
+        .contactPage{
             display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            p{
-                font-size: 1.5em;
-                font-weight: 500;
-                text-align: center;
+            transition: all 0.4s ease;
+            width: 100%;
+            .cocineraImg{
+                z-index: -1;
+                position: absolute;
+                width: 100%;
+                height: 90vh;
+                top: 10vh;
+                object-fit: cover;
+                transition: all 0.4s ease;
             }
-            a{
-                img{
-                    width: 40px;
-                    height: 40px;
+            .contactText{
+                width: 100%;
+                height: auto;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                p{
+                    font-size: 1.5em;
+                    font-weight: 500;
+                    text-align: center;
+                }
+                a{
+                    img{
+                        width: 40px;
+                        height: 40px;
+                    }
+                }
+            }
+            &:hover{
+                .cocineraImg{
+                    filter: blur(10px);
                 }
             }
         }
-        &:hover{
-            .cocineraImg{
-                filter: blur(10px);
-            }
-        }
     }
+    overflow: hidden;
 }

@@ -4,7 +4,7 @@
         width: 100%;
         .recipeHeader{
             h1{
-                padding-left: 20px;
+                padding: 15px 20px;
                 border-bottom: 1px solid #ccc;
             }
             border-bottom: 1px solid #ccc;
@@ -61,6 +61,7 @@
         flex-wrap: wrap;
         justify-content: space-evenly;
         background-color: #f1faee;
+        min-height: 90vh;
         .recipeCard{
             display: flex;
             flex-direction: column;

@@ -3,6 +3,24 @@
         background-color: $azul;
         width: 100%;
         .recipeHeader{
+            a{
+                color: $negro;
+                .volver{
+                    display: flex;
+                    align-items: center;
+                    padding: 5px 5px 5px 10px;
+                    img{
+                        width: 16px;
+                        margin: 0 5px 0 0;
+                        transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+                    }
+                    &:hover{
+                        img{
+                            transform: translateX(-4px);
+                        }
+                    }
+                }
+            }
             h1{
                 padding: 15px 20px;
                 border-bottom: 1px solid #ccc;

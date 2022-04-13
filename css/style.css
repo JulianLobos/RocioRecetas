@@ -187,9 +187,10 @@ header .headerContainer {
 .mainIndex .recipeSection {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-evenly;
+  justify-content: center;
   background-color: #f1faee;
-  min-height: 90vh; }
+  width: 100%;
+  height: 90vh; }
   .mainIndex .recipeSection .recipeCard {
     display: flex;
     flex-direction: column;
